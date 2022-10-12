@@ -5,11 +5,12 @@ def scheduler():
   #asks user for names 
   names=[]
   while True:
-    name= input("Enter the name:")
+    name= input("Enter name or type 'quit':")
     names.append(name)
-    choice= input("Do you want to complete entry, type 'yes' if so:")
-    if choice.casefold() == 'yes' :
+    if name.casefold() == 'quit' :
+      names.remove('quit')
       break
+
 
   #asks user for start date and time interval
   start = input("Enter Start date using '1/1/2000' format:")
@@ -33,4 +34,5 @@ def scheduler():
   fh = open('scheduler.txt', 'w')
   fh.write(compat)
   fh.close()
-#converted to py file 123
+scheduler()
+#learning to create repo
