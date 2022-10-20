@@ -1,6 +1,7 @@
 #Tools used for code are listed below 
 import random
 import pandas as pd
+import csv
 def scheduler():
   #asks user for names 
   names=[]
@@ -30,9 +31,9 @@ def scheduler():
 
   final= tuple(datenames)
   data = (final)
-  compat = (" ".join(map(str, data)))
-  fh = open('scheduler.txt', 'w')
-  fh.write(compat)
-  fh.close()
+ 
+  with open('sch.csv', 'w', encoding='UTF8', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerows(data)
 scheduler()
 #learning to create repo
