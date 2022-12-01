@@ -35,5 +35,5 @@ def scheduler():
   with open('sch.csv', 'w', encoding='UTF8', newline='') as f:
     writer = csv.writer(f)
     writer.writerows(data)
-scheduler()
+
 #learning to create repo
