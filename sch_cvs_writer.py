@@ -20,8 +20,10 @@ names_column_split = names_column_nowhite.split(",")
 
 with open(names_txtfile) as f: 
     namesfile = f.read()
-names_nowhite = namesfile.strip()
+names_nowhite = namesfile.replace(" ","" )
 names_not_found = names_nowhite.split(",")
+names_not_found = str(names_not_found)
+names_not_found = names_not_found.strip()
 new_names_set = set(names_not_found).difference(names_column_split) # finds the names that are not found in the original schedule
 new_names_list = list(new_names_set)
 new_names_random = random.sample(new_names_list, len(new_names_list))
