@@ -1,4 +1,4 @@
-How to Use (Only compatible with python 3.7 +) 
+Requirements (Only compatible with python 3.6 +, Must install pandas) 
 - Create a csv file with 2 columns , leave some rows in the names column absent 
   - dates must be in the right left column with the header labeled as "dates"
   - names must be in the right column with a header labeled as "names"
