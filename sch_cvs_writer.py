@@ -2,8 +2,11 @@ import pandas as pd
 import numpy as np 
 import random
 import csv
+old_schedule = input("Enter name of original csv file :")
+    
+names_txtfile = input("Enter name of original txt file with names inside") 
 
-file = pd.read_csv('') #enter name of cvs file of schedule into ''
+file = pd.read_csv(old_schedule)
 new_schedule = pd.DataFrame(columns=['dates', 'names'])
 date_column = file['dates']
 names_column = file['names'] 
@@ -15,7 +18,7 @@ names_column_nowhite = replace_nan.strip()
 names_column_split = names_column_nowhite.split(",")
 
 
-with open('') as f: #enter name of text file with names inside ''
+with open(names_txtfile) as f: 
     namesfile = f.read()
 names_nowhite = namesfile.replace(" ", "")
 names_not_found = names_nowhite.split(",")
