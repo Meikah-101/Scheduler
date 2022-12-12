@@ -1,5 +1,5 @@
 How to Use (Only compatible with python 3.7 +) 
-Create a csv file with 2 columns(dates being in the right column and names in the left column), leave some rows in the names column absent 
+- Create a csv file with 2 columns(dates being in the right column and names in the left column), leave some rows in the names column absent 
 
 Create a text file with a list of names seperated by commas in the same line (no new lines)
 to ensure succcess the amount of names in the text file should be equal to the amount of dates in the csv 
